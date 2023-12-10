@@ -1,0 +1,309 @@
+body{
+    background-color: #A8A8A8;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(0,0,0, 0.75),rgba(0,0,0, 0.75)),url(img/lbg.jpeg);
+      background-position:center;
+     background-size: cover;
+  }
+  nav {
+    background: #222;
+    padding: -5px 20px;
+    height: 60px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 1s;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .logo a:hover {
+    text-decoration: none;
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+    margin-left: 40px;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .Item.button {
+    order: 2;
+  }
+  .Item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: -4px;
+    order: 3;
+    display: none;
+  }
+  .Item.active {
+    display: block;
+  }
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+  
+  @media all and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+  
+    .logo {
+        flex: 1;
+    }
+  
+    .Item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+        border-radius:50em;
+    }
+    .button.secondary a {
+        background: transparent;    
+    }
+    .button a:hover {
+        text-decoration: none;
+        transition:all .25s;
+    }
+    .button:not(.secondary) a:hover {
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    } 
+  }
+  
+  @media all and (min-width: 768px) {
+    .Item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+  }
+  .container{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex; 
+   
+  }
+  .backbox{  
+    background-color: #404040;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    transform: translate(0,-50%);
+    top:50%;
+    display: inline-flex;
+  }
+  
+  .frontbox{
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    position: absolute;
+    right:0;
+    margin-right: 3%;
+    margin-left: 3%;
+    transition: right .8s ease-in-out;
+  }
+  
+  .moving{
+    right:45%;
+  }
+  
+  .loginMsg, .signupMsg{
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  
+  .loginMsg .title,
+  .signupMsg .title{
+    font-weight: 300;
+    font-size: 23px;
+  }
+  
+  .loginMsg p,
+  .signupMsg p {
+    font-weight: 100;
+  }
+  
+  .textcontent{
+    color:white;
+    margin-top:65px;
+    margin-left: 12%;
+  }
+  
+  .loginMsg button,
+  .signupMsg button {
+    background-color: #404040;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    font-size: 12px;
+    box-sizing: content-box;
+    font-weight: 300;
+    padding:10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .login, .signup{
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .login h2,
+  .signup h2 {
+    color: #35B729;
+    font-size:22px;
+  }
+  
+  .inputbox{
+    margin-top:-15px; 
+
+  }
+  .inputbox .s,.forgot .s{
+    width: 70px;
+    height:35px;
+    border-radius: 8px;
+    background-color: #35B729;
+    color:white;
+    margin-top: 10px;
+    margin-left: 180px;
+  
+  }
+  .inputbox a{
+    color: #8f12ae;
+  }
+  .login input, 
+  .signup input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border:black;
+    margin-bottom:20px;
+    font-size: 12px;
+  }
+  .login{
+    padding-top: 80px;
+  }
+  
+  .login button,
+  .signup button{
+    background-color: #35B729;
+    border: none;
+    color:white;
+    font-size: 12px;
+    font-weight: 300;
+    box-sizing: content-box;
+    padding:10px;
+    border-radius: 10px;
+    width: 60px;
+    position: absolute;
+    right:30px;
+    bottom: 30px;
+    cursor: pointer;
+  }
+
+  .login p {
+    cursor: pointer;
+    color:#404040;
+    font-size:15px;
+  }
+  
+  .loginMsg, .signupMsg{
+    transition: opacity .8s ease-in-out;
+  }
+  
+  .visibility{
+    opacity: 0;
+  }
+  
+  .hide{
+    display: none;
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login/SignUp</title>
+        <link rel="stylesheet" href="/static/Login.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#"><i class="fa-solid fa-dove" style="color: #565a61;"></i> Chittu</a></li>
+            <li class="Item"><a href="home.html"><i class="fa-solid fa-house " style="color: #c6aaaa;"></i> Home</a></li>
+            <li class="Item"><a href="#"><i class="fa-regular fa-address-card" style="color: #c6aaaa;"></i> About</a></li>
+            <li class="Item"><a href="#"><i class="fa-solid fa-message" style="color: #c6aaaa;"></i> Contact</a></li>
+            </li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <div class="backbox">
+              <div class="loginMsg">
+                <div class="textcontent">
+                  <p class="title">Don't have an account?</p>
+                  <p>Sign up to save all your graph.</p>
+                  <button id="switch1">Sign Up</button>
+                </div>
+              </div>
+              <div class="signupMsg visibility">
+                <div class="textcontent">
+                  <p class="title">Have an account?</p>
+                  <p>Log in to see all your collection.</p>
+                  <button id="switch2">LOG IN</button>
+                </div>
+              </div>
+            </div>
+        
+            <div class="frontbox">
+              <div class="login">
+                <h2>LOG IN</h2>
+                <div class="inputbox">
+                  <input type="text" name="email" placeholder="  EMAIL">
+                  <input type="password" name="password" placeholder="  PASSWORD">
+                  <a href="#">Forgot Password?</a>
+                  <input class="s" type="submit" placeholder="Login">
+                </div>
+              </div>
+        
+              <div class="signup hide">
+                <h2>SIGN UP</h2>
+                <div class="inputbox">
+                  <input type="text" name="fullname" placeholder="  FULLNAME">
+                  <input type="email" name="email" placeholder="  EMAIL">
+                  <input type="password" name="password" placeholder="  PASSWORD">
+                  <input type="password" name="password" placeholder="CORRECT  PASSWORD">
+                  <input class="s" type="submit"   name="SIGN UP" >
+                </div>
+               
+              </div>
+        
+            </div>
+          </div>
+          <script src="/AgrowLucas/Login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chittu</title>
+    <link rel="stylesheet" href="/static/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><img  class="ml" src="/img/mainlogo.png"></li>
+            <li class="Item"><a href="Home.html"><i class="fa-solid fa-house fa-xs " style="color: #ebd6d6;"></i> Home</a></li>
+            <li class="Item"><a href="#"><i class="fa-regular fa-address-card fa-xs" style="color: #ebd6d6"></i> About</a></li>
+            <li class="Item"><a href="#"><i class="fa-solid fa-message fa-xs" style="color: #ebd6d6;"></i> Contact</a></li>
+            </li>
+            <li class="Item button"><a href="login.html"><i class="fa-regular fa-user "></i> Log In</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="slide">
+            <div class="item" style="background-image:url(/img/pic/6.jpg)">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/pic/5.jpg);">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/pic/2.jpg);">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/pic/3.jpg);">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item" style="background-image: url(/img/pic/1.jpg);">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+    <main class="main flow">
+        <div class="main__cards cards">
+          <div class="cards__inner">
+        <div class="govsc">
+           <div><img class="i" src="/img/modi.webp"></div>
+            <div><a href="schemes.html" class="cards__card card">
+              <h2 class="card__heading">To Know About</h2>
+              <p class="card__price">Government Schemes</p>
+              <ul role="list" class="card__bullets flow">
+                <li>By staying known about these Government Schemes,Farmers can make informed decisions,
+                    increase their productivity and enhanced their livelihoods</li>
+                <li>This contributes the growth and sustainability of the agricultural sector</li>
+              </ul>
+            </a></div></div>
+      
+           <div class="fof"><div ><img class="i"src="/img/FOF.png"></div><div><a href="FOF.html" class="cards__card card">
+              <h2 class="card__heading">FOF</h2>
+              <p class="card__price">Friends Of Farmers</p>
+              <ul role="list" class="card__bullets flow">
+                <li>Friends Of Farmers refer to an individuals or organizations that provide support and assistance to farmers</li>
+                <li>We can offer finanical assistance in the form of grants,loans or subsidies that helps farmers to cover expenses for seeds ,equipment</li>
+                <li>We can assist farmers in acessing markets and negotiating for fair prices for their products</li>
+              </ul>
+            </a></div></div>
+      
+          
+          <div class="overlay cards__inner"></div>
+        </div>
+      </main>
+      <main class="main flow" class="Main">
+        <div class="main__cards cards">
+          <div class="card__inner">
+
+            <div class="inves"><div><img class="i" src="/img/warehou.avif"></div><div><a href="http://127.0.0.1:5000/" class="cards__card card">
+              <h2 class="card__heading">Investments</h2>
+              <p class="card__price">Analysis of Investment</p>
+              <ul role="list" class="card__bullets flow">
+                <li>Government invests in FPOs(Farmer Producer organizations),And got several positive outcomes and 
+                    benefits for both agricultural sector and overall economy</li>
+                 <li>Funds allocated to FPOs used to invest in Modern farming techniques,technology that leads to higher yields
+                </li>
+                 <li>Theses investments help FPOs to build stronger and organized farmers collectives,
+                    enabling them to negotiate for better prices.
+                </li>
+              </ul>
+            </a></div>
+            </div>
+      
+            <div class="fof"><div><img class="i" src="/img/SMART.jpg"></div><div><a href="Save.html" class="cards__card card">
+              <h2 class="card__heading">Be The Change</h2>
+              <p class="card__price">Save Your Village</p>
+              <ul role="list" class="card__bullets flow">
+                <li>The choices that people make about agriculture have significant implications 
+                    for both individual and society as a whole</li>
+                <li>People's choices about agriculture can influence the availability of food 
+                    and helps to ensure reliale food supply </li>
+                <li>Support for agricultural research and innovation can lead to the development of new crop variety/technology</li>
+              </ul>
+            </a></div></div></div>
+      
+          
+          <div class="overlay cards__inner"></div>
+        </div>
+      </main>
+      
+     
+
+    
+    <script src="/AgrowLucas/Home.js"></script>
+
+</body>

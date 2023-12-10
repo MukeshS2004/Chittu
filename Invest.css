@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family:quando;
+    width: 100%;
+    height: 2000px;
+    background:  #182735;
+  }
+  nav {
+    background: transparent;
+    padding: 5px 20px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    background-color: #222;
+    border: solid;
+    padding: 6px 10px 6px 10px;
+    border-color: #005959;
+    font-size: 18px;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: 0.7s;
+    height: 40px;
+    width:auto;
+  }
+  a:hover {
+    background-color: #463f3f;
+  }
+  .logo a:hover {
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+    margin-left: 40px;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .Item.button {
+    order: 2;
+  }
+  .Item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: -4px;
+    order: 3;
+    display: none;
+  }
+  .Item.active {
+    display: block;
+  }
+  
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+  
+  @media all and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+  
+    .logo {
+        flex: 1;
+    }
+  
+    .Item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+        border-radius:50em;
+    }
+    .button.secondary a {
+        background: transparent;    
+    }
+    .button a:hover {
+        text-decoration: none;
+        transition:all .25s;
+    }
+    .button:not(.secondary) a:hover {
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    } 
+  }
+  
+  @media all and (min-width: 768px) {
+    .Item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+  }

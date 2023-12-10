@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends of Farmers</title>
+    <link rel="stylesheet" href="/static/FOF.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#"><i class="fa-solid fa-dove" style="color: #565a61;"></i> Chittu</a></li>
+            <li class="Item"><a href="home.html"><i class="fa-solid fa-house fa-xs " style="color: #ebd6d6;"></i> Home</a></li>
+            <li class="Item"><a href="#"><i class="fa-regular fa-address-card fa-xs" style="color: #ebd6d6"></i> About</a></li>
+            <li class="Item"><a href="#"><i class="fa-solid fa-message fa-xs" style="color: #ebd6d6;"></i> Contact</a></li>
+            </li>
+            <li class="Item button"><a href="http://127.0.0.1:5500/login.html"><i class="fa-regular fa-user "></i> Log In</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <div class="para">
+        <h1>FRIENDS OF FARMERS</h1><br>
+        <p>"Friends of Farmer" could refer to various concepts or organizations, so I'll provide potential benefits from different perspectives:
+
+           <br>$ Supporting Farmers: Organizations or groups known as "Friends of Farmer" may provide financial support to farmers. This support can help farmers during challenging times such as crop failures, natural disasters, or economic hardships.
+            
+            <br>$ Community Building: By bringing together individuals who are passionate about farming and agriculture, "Friends of Farmer" groups can foster a sense of community and solidarity among farmers. This can help reduce the isolation that some farmers may feel and create a support network.
+            
+        </details></div>
+    <section class="container">
+        <header>FoF Registration Form</header>
+        <form action="#" class="form">
+          <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" required />
+          </div>
+          <div class="input-box">
+            <label>Username</label>
+            <input type="text" placeholder="Enter Username" required />
+          </div>
+  
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="text" placeholder="Enter email address" required />
+          </div>
+  
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="number" placeholder="Enter phone number" required />
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input type="date" placeholder="Enter birth date" required />
+            </div>
+          </div>
+          <div class="input-box">
+            <label>Aadhar</label>
+            <input type="number" placeholder="Aadhar Number" required />
+          </div>
+          <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" id="check-male" name="gender" checked />
+                <label for="check-male">male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-female" name="gender" />
+                <label for="check-female">Female</label>
+              </div>
+              <div class="gender">
+                <input type="radio" id="check-other" name="gender" />
+                <label for="check-other">prefer not to say</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Address</label>
+            <input type="text" placeholder="Enter street address" required />
+            <input type="text" placeholder="Enter street address line 2" required />
+            <div class="column">
+              <div class="select-box">
+                <select>
+                  <option hidden>Country</option>
+                  <option>America</option>
+                  <option>Japan</option>
+                  <option>India</option>
+                  <option>Nepal</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Enter your city" required />
+            </div>
+            <div class="input-box">
+              <label>Password</label>
+              <input type="password" placeholder="Password" required />
+              <label>Confirm Password</label>
+              <input type="password" placeholder="Confirm Password" required />
+            </div>
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+</body>
